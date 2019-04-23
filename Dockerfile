@@ -146,6 +146,6 @@ LABEL maintainer="Jonathan Hult <atldocker@JonathanHult.com>"                   
 USER $JIRA_USER
 WORKDIR $JIRA_HOME
 VOLUME ["$JIRA_HOME"]
-EXPOSE 8080
+EXPOSE 4502
 ENTRYPOINT ["/sbin/tini","--","/usr/local/share/atlassian/docker-entrypoint.sh"]
 CMD ["jira"]
